@@ -25,7 +25,7 @@
           <ImageSlide class="slide" :images="slides">
             <div class="link" @click="toAuthor(author.id)">
               <Icon name="more" scale="20"></Icon>
-              <div>查看更多</div>
+              <div>See More</div>
             </div>
           </ImageSlide>
         </swiper-slide>
