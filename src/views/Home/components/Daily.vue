@@ -3,16 +3,16 @@
     <van-cell class="cell" :border="false">
       <template #title>
         <Icon class="icon random" name="random"></Icon>
-        <span class="title">随便看看</span>
+        <span class="title">Daily Random</span>
       </template>
     </van-cell>
     <van-list
       v-model="loading"
       class="artwork-list"
       :finished="finished"
-      finished-text="没有更多了"
+      finished-text="End"
       :error.sync="error"
-      error-text="网络异常，点击重新加载"
+      error-text="Network Error，Click To Reload"
       @load="getRankList"
     >
       <div class="card-box">
