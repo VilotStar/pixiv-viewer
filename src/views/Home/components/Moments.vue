@@ -3,11 +3,11 @@
     <van-cell class="cell" :border="false">
       <template #title>
         <Icon class="icon random" name="random"></Icon>
-        <span class="title">随便看看</span>
+        <span class="title">Moments Random</span>
       </template>
     </van-cell>
     <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
-      <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="getLatest">
+      <van-list v-model="loading" :finished="finished" finished-text="End" @load="getLatest">
         <div class="card-box">
           <div class="column">
             <ImageCard
