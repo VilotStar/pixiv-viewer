@@ -35,15 +35,15 @@
               </li>
             </ul>
             <span class="follow">
-              <span class="num">{{userInfo.follow}}</span>关注
+              <span class="num">{{userInfo.follow}}</span>Follow
             </span>
             <span class="friend" v-if="userInfo.friend">
-              <span class="num">{{userInfo.friend}}</span>好P友
+              <span class="num">{{userInfo.friend}}</span>Friend User
             </span>
             <div class="detail" :class="{ex:isEx||commentHeight<160}">
               <div class="content" v-html="userInfo.comment" ref="comment"></div>
               <div class="more" v-if="!isEx&&commentHeight>=160" @click="isEx=true">
-                查看更多
+                See More
                 <Icon class="icon dropdown" name="dropdown"></Icon>
               </div>
             </div>
