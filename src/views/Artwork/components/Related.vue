@@ -3,15 +3,15 @@
     <van-cell class="cell" :border="false">
       <template #title>
         <Icon class="icon heart" name="heart"></Icon>
-        <span class="title">相关作品</span>
+        <span class="title">Related</span>
       </template>
     </van-cell>
     <van-list
       v-model="loading"
       :finished="finished"
-      finished-text="没有更多了"
+      finished-text="End"
       :error.sync="error"
-      error-text="网络异常，点击重新加载"
+      error-text="Network Error，Click To Reload"
       @load="getRelated()"
     >
       <div class="card-box">
