@@ -76,7 +76,7 @@ export default {
     beforeRead(file) {
       // console.log(file);
       if (!file.type.startsWith("image/")) {
-        this.$toast("请选择图片文件");
+        this.$toast("Please Use A Image File");
         return false;
       }
       return true;
@@ -112,7 +112,7 @@ export default {
                 this.loading = false;
                 this.$toast({
                   type: "fail",
-                  message: "返回结果解析失败"
+                  message: "Prasing Failure"
                 });
               }
               // console.log(this.res, xhr.responseText);
