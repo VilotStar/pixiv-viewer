@@ -3,7 +3,7 @@
     <van-cell class="cell" :border="false" is-link to="/rank/daily">
       <template #title>
         <Icon class="icon crown" name="crown"></Icon>
-        <span class="title">排行榜</span>
+        <span class="title">Rand Crown</span>
       </template>
     </van-cell>
     <div class="card-box">
@@ -15,11 +15,11 @@
           <ImageSlide :images="slides">
             <div class="link">
               <Icon name="more" scale="20"></Icon>
-              <div>查看更多</div>
+              <div>See More</div>
             </div>
           </ImageSlide>
           <!-- <router-link class="rank" :to="{name: 'Rank'}">
-            查看更多
+            See More
             <van-icon name="arrow" />
           </router-link>-->
         </van-swipe-item>
