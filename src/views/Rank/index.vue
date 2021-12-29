@@ -28,9 +28,9 @@
       class="rank-list"
       v-model="loading"
       :finished="finished"
-      finished-text="没有更多了"
+      finished-text="End"
       :error.sync="error"
-      error-text="网络异常，点击重新加载"
+      error-text="Network Error，Click To Reload"
       @load="getRankList"
     >
       <div class="card-box">
@@ -95,17 +95,17 @@ export default {
       loading: false,
       finished: false,
       menu: {
-        daily: { name: "日榜", io: "day" },
-        weekly: { name: "周榜", io: "week" },
-        monthly: { name: "月榜", io: "month" },
-        rookie: { name: "新人榜", io: "week_rookie" },
-        original: { name: "原创榜", io: "week_original" },
-        male: { name: "男性向", io: "day_male" },
-        female: { name: "女性向", io: "day_female" },
-        r18: { name: "R-18 - 日榜", io: "day_r18", x: true },
-        "r18-w": { name: "R-18 - 周榜", io: "week_r18", x: true },
-        "r18-m": { name: "R-18 - 男性向", io: "day_male_r18", x: true },
-        "r18-f": { name: "R-18 - 女性向", io: "day_female_r18", x: true }
+        daily: { name: "Daily", io: "day" },
+        weekly: { name: "Weekly", io: "week" },
+        monthly: { name: "Monthly", io: "month" },
+        rookie: { name: "Rookie", io: "week_rookie" },
+        original: { name: "Original", io: "week_original" },
+        male: { name: "Male", io: "day_male" },
+        female: { name: "Female", io: "day_female" },
+        r18: { name: "R-18 - Daily", io: "day_r18", x: true },
+        "r18-w": { name: "R-18 - Weekly", io: "week_r18", x: true },
+        "r18-m": { name: "R-18 - Male", io: "day_male_r18", x: true },
+        "r18-f": { name: "R-18 - Female", io: "day_female_r18", x: true }
       }
     };
   },
