@@ -5,7 +5,7 @@
         class="search-bar"
         v-model="keywords"
         shape="round"
-        placeholder="请输入搜索关键词"
+        placeholder="Enter A Search Term"
         maxlength="50"
         @search="onBlur(true)"
         @cancel="onCancel"
@@ -13,7 +13,7 @@
         @blur="onBlur(false)"
       ></van-search>
       <div class="search-bar-word" @click="handleWordsClick($event)" ref="words">
-        <span class="placeholder" v-if="keywordsList.length===0 && !lastWord">请输入搜索关键词</span>
+        <span class="placeholder" v-if="keywordsList.length===0 && !lastWord">Enter A Search Term</span>
         <div class="word" v-for="(keyword, index) in keywordsList" :key="index">
           <span class="text">{{keyword}}</span>
           <span class="close" :data-index="index"></span>
@@ -24,7 +24,7 @@
       </div>
       <div class="search-history" v-if="searchHistory.length>0 && focus">
         <div class="title-bar">
-          历史搜索
+          History Search
           <div @click="clearHistory">
             <Icon name="del" scale="2"></Icon>
           </div>
@@ -57,9 +57,9 @@
         class="result-list"
         v-model="loading"
         :finished="finished"
-        finished-text="没有更多了"
+        finished-text="End"
         :error.sync="error"
-        error-text="网络异常，点击重新加载"
+        error-text="Network Error，Click To Reload"
         @load="search"
       >
         <div class="card-box">
